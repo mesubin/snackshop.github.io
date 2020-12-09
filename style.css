@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  font-family :'Hi Melody', cursive;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 9px 12px;
+}
+.navebar__logo{
+  font-size: 25px;
+  color: Orange;
+}
+.navebar__logo i{
+  color: Orange;
+}
+
+.navbar__menu{
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.navbar__menu li {
+  padding: 9px 12px;
+}
+.navbar__menu li:hover {
+  background-color: gray;
+  border-radius: 4px;
+}
+
+.navbar__icons {
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar__icons li {
+  padding: 9px 12px
+}
+
+.navbar__toogleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: Orange;
+}
+
+@media screen and (max-width: 768px) {
+  .body{
+    box-sizing: border-box;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px 24px;
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .naver__menu a{
+    display: block;
+  }
+  .navbar__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar__toogleBtn {
+    display: block;
+  }
+  .navbar__menu.active{
+    display: flex;
+  }
+  .navbar__icons.active {
+    display: flex;
+  }
+}
